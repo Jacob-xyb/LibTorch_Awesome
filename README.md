@@ -1,12 +1,27 @@
 # LibTorch_Awesome
-There are too few people and too few data in this library, but I like PyTorch so Libtorch should go too.
-
-
-
-**Only one person maintenance is really very tired, hope to have like-minded friends together** :fleur_de_lis: :smile::smile::smile::smile::smile::fleur_de_lis: 
-
-
+## Derivation 
 
 DeepLearning by LibTroch
 
 Pytorch Please see https://tangshusen.me/Dive-into-DL-PyTorch/#/
+
+## Gossip
+
+There are too few people and too few data in this library, but I like PyTorch so Libtorch should go too.
+
+:triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post:  **The five-star red flag**. :triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post: 
+
+And I‘m a Chinese, a lot of English just for knowledge sharing.In other words, the Chinese will understand this project!!!
+
+## Help
+
+**Only one person maintenance is really very tired, hope to have like-minded friends together** :fleur_de_lis: :smile::smile::smile::smile::smile::fleur_de_lis: 
+
+# Introduction
+
+[Setup](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/other_docs/LibTorch_Setup.md)
+
+# Content
+- **chapter00:Something You Need to Know**
+- **chapter01:Data Operation**
+

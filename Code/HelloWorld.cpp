@@ -1,7 +1,11 @@
 ﻿#include <iostream>
 #include "Jx_Head.h"
 
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    test_Jx();
+
+    std::cout << "press [ENTER] to continue " << std::endl;
+    std::cin.get();
 }

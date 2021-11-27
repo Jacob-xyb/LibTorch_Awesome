@@ -13,10 +13,22 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\chapter00">
+      <UniqueIdentifier>{76d5e8f9-2b1b-4d24-8ebd-a67a338d762d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\chapter01">
+      <UniqueIdentifier>{47db9eb2-1375-4e9d-ba0a-4af7fda03384}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorld.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter01\1.1_TensorInitialization.cpp">
+      <Filter>资源文件\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter00\Jx_Notes.cpp">
+      <Filter>资源文件\chapter00</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
