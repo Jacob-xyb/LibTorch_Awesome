@@ -23,5 +23,7 @@ And I‘m a Chinese, a lot of English just for knowledge sharing.In other words,
 
 # Content
 - **chapter00:Something You Need to Know**
+
 - **chapter01:Data Operation**
+  - [**1.1 Tensor Initialization**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.1_Tensor-Initialization.md)
 
