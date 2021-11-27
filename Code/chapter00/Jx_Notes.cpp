@@ -10,3 +10,12 @@ void HowToType()
 	cout << typeid(x).name() << endl;
 	cout << typeid(y).name() << endl;
 }
+
+void Jx_TODO()
+{
+	// torch::linear return scalar ; like dot product.
+	auto x = torch::tensor({ 1,2,3 });
+	auto w = torch::tensor({ 2,2,2 });
+	auto x1 = torch::linear(x, w);
+	cout << x1 << endl;
+}

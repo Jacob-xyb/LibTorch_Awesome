@@ -46,5 +46,31 @@ void TensorInitialization_RandomInitialization()
 	// Randn() takes the random value of the normal distribution N(0,1).
 	auto x4 = torch::randn({ 2,3 });
 	cout << "randn tensor:\n" << x4 << endl;
+}
 
+void TensorInitialization_LineInitialization()
+{
+	// Normal operation: linspace(start, end, nums);
+	//	you will get nums values line in [start, end].
+	auto x1 = torch::linspace(1, 5, 10);
+	cout << x1.view({ 1,-1 }) << endl;
+
+	// If you only input 2 params, you will get the following warnings, but the program will finish.
+	//	Like 'auto x1 = torch::linspace(1,5);` .
+	/*Warning: Not providing a value for linspace's steps is deprecated and will throw a runtime error in a future release. This warning will appear only once per process. (function operator ())*/
+
+	//**********************************************//
+
+	// Arange is an ordered sequence of integers and there are three common ways to call it.
+	//	Very like Python's Numpy.
+	//		But first you should know: range of sequence is [start, end).
+	// 1.arange(strat, end, steps); return LongTensor [start:end-1:steps]. 
+	auto x2 = torch::arange(0, 6, 2);
+	cout << x2.view({ 1,-1 }) << endl;
+	// 2.arange(strat, end); return LongTensor [start:end-1].
+	auto x3 = torch::arange(3, 6);
+	cout << x3.view({ 1,-1 }) << endl;
+	// 3.arange(Scalar); return LongTensor [0:Scalar-1].
+	auto x4 = torch::arange(5);
+	cout << x4.view({ 1,-1 }) << endl;
 }
