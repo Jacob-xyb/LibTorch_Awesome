@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void TensorInitialization_LineInitialization();
+void TensorInitialization_Like();
 
-#define test_Jx() TensorInitialization_LineInitialization()
+#define test_Jx() TensorInitialization_Like()
