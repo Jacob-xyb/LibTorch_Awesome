@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void TensorInitialization_Like();
+void SlicingOperation_Index();
 
-#define test_Jx() TensorInitialization_Like()
+#define test_Jx() SlicingOperation_Index()

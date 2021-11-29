@@ -30,6 +30,12 @@
     <ClCompile Include="chapter00\Jx_Notes.cpp">
       <Filter>资源文件\chapter00</Filter>
     </ClCompile>
+    <ClCompile Include="chapter01\1.2_TensorReshape.cpp">
+      <Filter>资源文件\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter01\1.3_SlicingOperation.cpp">
+      <Filter>资源文件\chapter01</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jx_Head.h">
