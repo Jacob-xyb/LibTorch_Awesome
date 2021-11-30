@@ -9,4 +9,12 @@ void TensorReshape_ViewReshape()
 
 	auto y = x.view({ 3,3 });
 	cout << "view_as():\n" << x.view_as(y) << endl;
+
+	// View and reshape both are shallow copy.
+	y[0] = torch::tensor({ 8, 8, 8 });
+	cout << x.view({ 3,3 }) << endl;
+
+	auto z = x.reshape({ 3,3 });
+	z[1] = torch::tensor({ 6, 6, 6 });
+	cout << z.view({ 3,3 }) << endl;
 }
