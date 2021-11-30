@@ -37,6 +37,19 @@ void SlicingOperation_Basic()
 	cout << "channel 2:x[0][0][0]\n" << x[0][0][0] << endl;
 }
 
+
+void SlicingOperation_Slice()
+{
+	// slice(dim,start,end,step);shallow copy.
+	auto x = torch::rand({ 3, 3, 5 });
+	cout << x << endl;
+	cout << x.slice(1, 1) << endl;
+	
+	//auto y = x.slice(1, 1);
+	//y[0] = 3;
+	//cout << x << endl;
+}
+
 void SlicingOperation_Index()
 {
 	// There are many methods to call.
@@ -75,3 +88,26 @@ void SlicingOperation_Index()
 	//		And you will find that cols -> rows.
 	cout << "x.index({\"...\", int}):\n" << x.index({ "...", 1 }) << endl;
 }
+
+void SlicingOperation_Select()
+{
+	// select(dim,index)
+	// Select is very easy, not suitable for dim >= 2;
+	//	If dim >=2 , returns every index in dim.
+	//	If you want to copy, add '.clone()'.
+	auto x = torch::rand({ 3, 3, 5 });
+	cout << x << endl;
+	cout << x.select(1, 1) << endl;
+	auto x1 = torch::select(x, 1, 2);
+	cout << x1 << endl;
+}
+
+void SlicingOperation_IndexSelect()
+{
+	auto x = torch::rand({ 3, 3, 5 });
+	cout << x << endl;
+	auto idx = torch::tensor({ 0,1 });
+	cout << x.index_select(1, idx) << endl;
+}
+
+
