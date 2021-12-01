@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void SlicingOperation_Index();
+void LibNorm_Normalized();
 
-#define test_Jx() SlicingOperation_Index()
+#define test_Jx() LibNorm_Normalized()

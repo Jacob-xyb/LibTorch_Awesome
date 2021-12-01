@@ -19,6 +19,9 @@
     <Filter Include="资源文件\chapter01">
       <UniqueIdentifier>{47db9eb2-1375-4e9d-ba0a-4af7fda03384}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\chapter02">
+      <UniqueIdentifier>{355e0dc4-b9a8-4e3b-ae54-40c4a68b9b55}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorld.cpp">
@@ -35,6 +38,15 @@
     </ClCompile>
     <ClCompile Include="chapter01\1.3_SlicingOperation.cpp">
       <Filter>资源文件\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter01\1.4_Merge.cpp">
+      <Filter>资源文件\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter02\grad.cpp">
+      <Filter>资源文件\chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter02\Statistical.cpp">
+      <Filter>资源文件\chapter02</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

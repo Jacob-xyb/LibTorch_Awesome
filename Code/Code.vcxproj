@@ -147,6 +147,9 @@
     <ClCompile Include="chapter01\1.1_TensorInitialization.cpp" />
     <ClCompile Include="chapter01\1.2_TensorReshape.cpp" />
     <ClCompile Include="chapter01\1.3_SlicingOperation.cpp" />
+    <ClCompile Include="chapter01\1.4_Merge.cpp" />
+    <ClCompile Include="chapter02\grad.cpp" />
+    <ClCompile Include="chapter02\Statistical.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
   </ItemGroup>
   <ItemGroup>

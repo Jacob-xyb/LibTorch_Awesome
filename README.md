@@ -28,4 +28,5 @@ And I‘m a Chinese, a lot of English just for knowledge sharing.In other words,
   - [**1.1 Tensor Initialization**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.1_Tensor-Initialization.md)
   - [**1.2 Tensor Reshape**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.2_Tensor-Reshape.md)
   - [**1.3 Slicing Operation**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.3_Slicing-Operation.md)
+  - [**1.4 Merge**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.4_Merge.md)
 
