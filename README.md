@@ -22,11 +22,13 @@ And I‘m a Chinese, a lot of English just for knowledge sharing.In other words,
 [Setup](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/other_docs/LibTorch_Setup.md)
 
 # Content
-- **chapter00:Something You Need to Know**
-
+- **chapter00:Something You Need**
 - **chapter01:Data Operation**
   - [**1.1 Tensor Initialization**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.1_Tensor-Initialization.md)
   - [**1.2 Tensor Reshape**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.2_Tensor-Reshape.md)
   - [**1.3 Slicing Operation**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.3_Slicing-Operation.md)
   - [**1.4 Merge**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.4_Merge.md)
+- **chapter02:Data Calculation**
+  - [**2.1 Basic Calculation**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter02_Data-Calculation/2.1_Basic-Calculation.md)
+  - [**2.2 Linear Algebra**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter02_Data-Calculation/2.2_Linear-Algebra.md)
 
