@@ -18,3 +18,32 @@ void TensorReshape_ViewReshape()
 	z[1] = torch::tensor({ 6, 6, 6 });
 	cout << z.view({ 3,3 }) << endl;
 }
+
+void TensorReshape_Transpose()
+{
+	// `.t()` and `.transpose()` both are shallow copy.
+	auto x1 = torch::rand({ 2,3 });
+	cout << x1 << endl;
+	auto x2 = x1.t();
+	cout << x2 << endl;
+	auto x3 = x1.transpose(0,1);
+	cout << x3 << endl;
+
+	TORCH_CHECK(x1.data_ptr() == x2.data_ptr());
+	TORCH_CHECK(x1.data_ptr() == x3.data_ptr());
+
+	// But you need to know, after `.t()` and `.transpose()`,
+	//	data is not contiguous in storage.
+	//	you can't use `view()`.
+	//cout << x2.view({ 1,6 }) << endl;
+	//cout << x3.view({ 1,6 }) << endl;
+	
+	// First determine whether it is continuous. `.is_contiguous()`.
+	cout << "after .t(), x2.is_contiguous(): " << x2.is_contiguous() << endl;
+	x2 = x2.contiguous();
+	//	Notice now that the memory space has changed.
+	// 	   Means that `.contiguous()` is deep copy.
+	//TORCH_CHECK(x1.data_ptr() == x2.data_ptr());
+	cout << "after .contiguous(), x2.is_contiguous(): " << x2.is_contiguous() << endl;
+	cout << x2.view({ 1,6 }) << endl;
+}
