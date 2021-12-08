@@ -11,6 +11,12 @@ void HowToType()
 	cout << typeid(y).name() << endl;
 }
 
+void HowToPtr()
+{
+	auto x = torch::rand({ 2,3 });
+	cout << x.data_ptr<float>() << endl;
+}
+
 void Jx_TODO()
 {
 	// torch::linear return scalar ; like dot product.
