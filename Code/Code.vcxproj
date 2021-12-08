@@ -146,11 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chapter00\0.1_TensorInfo.cpp" />
     <ClCompile Include="chapter00\Jx_Notes.cpp" />
     <ClCompile Include="chapter01\1.1_TensorInitialization.cpp" />
     <ClCompile Include="chapter01\1.2_TensorReshape.cpp" />
     <ClCompile Include="chapter01\1.3_SlicingOperation.cpp" />
     <ClCompile Include="chapter01\1.4_Merge.cpp" />
+    <ClCompile Include="chapter01\1.5_DataTransformation.cpp" />
     <ClCompile Include="chapter02\2.1_BasicCaculation.cpp" />
     <ClCompile Include="chapter02\2.2_LinearAlgebra.cpp" />
     <ClCompile Include="chapter02\grad.cpp" />

@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void LibNorm_MostValue();
+void TensorInfo_DtypeInfo();
 
-#define test_Jx() LibNorm_MostValue()
+#define test_Jx() TensorInfo_DtypeInfo()

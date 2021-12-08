@@ -54,6 +54,12 @@
     <ClCompile Include="chapter02\2.3_Statistical.cpp">
       <Filter>资源文件\chapter02</Filter>
     </ClCompile>
+    <ClCompile Include="chapter01\1.5_DataTransformation.cpp">
+      <Filter>资源文件\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter00\0.1_TensorInfo.cpp">
+      <Filter>资源文件\chapter00</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jx_Head.h">
