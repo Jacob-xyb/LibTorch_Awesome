@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void LibNorm_Normalized();
+void LibNorm_MostValue();
 
-#define test_Jx() LibNorm_Normalized()
+#define test_Jx() LibNorm_MostValue()

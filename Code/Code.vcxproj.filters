@@ -45,7 +45,13 @@
     <ClCompile Include="chapter02\grad.cpp">
       <Filter>资源文件\chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="chapter02\Statistical.cpp">
+    <ClCompile Include="chapter02\2.1_BasicCaculation.cpp">
+      <Filter>资源文件\chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter02\2.2_LinearAlgebra.cpp">
+      <Filter>资源文件\chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter02\2.3_Statistical.cpp">
       <Filter>资源文件\chapter02</Filter>
     </ClCompile>
   </ItemGroup>

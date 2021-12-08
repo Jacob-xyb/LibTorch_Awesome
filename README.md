@@ -11,7 +11,7 @@ There are too few people and too few data in this library, but I like PyTorch so
 
 :triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post:  **The five-star red flag**. :triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post: 
 
-And I‘m a Chinese, a lot of English just for knowledge sharing.In other words, the Chinese will understand this project!!!
+And I‘m a Chinese, a lot of English just for knowledge sharing. In other words, the Chinese will understand this project!!!
 
 ## Help
 
@@ -30,5 +30,9 @@ And I‘m a Chinese, a lot of English just for knowledge sharing.In other words,
   - [**1.4 Merge**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter01_Data-Operation/1.4_Merge.md)
 - **chapter02:Data Calculation**
   - [**2.1 Basic Calculation**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter02_Data-Calculation/2.1_Basic-Calculation.md)
+  
   - [**2.2 Linear Algebra**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter02_Data-Calculation/2.2_Linear-Algebra.md)
-
+  
+  - [**2.3 Statistical**](https://github.com/Jacob-xyb/LibTorch_Awesome/blob/master/Doc/chapter02_Data-Calculation/2.3_Statistical.md)
+  
+    

@@ -82,6 +82,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\cpplib\libtorch_GPU\include;D:\cpplib\libtorch_GPU\include\torch\csrc\api\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -140,6 +141,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>c10.lib;libprotobuf.lib;mkldnn.lib;torch.lib;torch_cpu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\cpplib\libtorch_GPU\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -148,8 +151,10 @@
     <ClCompile Include="chapter01\1.2_TensorReshape.cpp" />
     <ClCompile Include="chapter01\1.3_SlicingOperation.cpp" />
     <ClCompile Include="chapter01\1.4_Merge.cpp" />
+    <ClCompile Include="chapter02\2.1_BasicCaculation.cpp" />
+    <ClCompile Include="chapter02\2.2_LinearAlgebra.cpp" />
     <ClCompile Include="chapter02\grad.cpp" />
-    <ClCompile Include="chapter02\Statistical.cpp" />
+    <ClCompile Include="chapter02\2.3_Statistical.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
   </ItemGroup>
   <ItemGroup>
