@@ -2,7 +2,12 @@
 
 void TensorInfo()
 {
-
+	torch::Tensor x;
+	cout << x << endl;
+	if (x.numel())
+	{
+		cout << "xxx" << endl;
+	}
 }
 
 void TensorInfo_BasicInfo()

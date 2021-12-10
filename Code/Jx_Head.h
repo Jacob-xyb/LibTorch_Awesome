@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void TensorInfo_DtypeInfo();
+void TensorInfo();
 
-#define test_Jx() TensorInfo_DtypeInfo()
+#define test_Jx() TensorInfo()
