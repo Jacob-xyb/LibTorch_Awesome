@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void TensorInfo();
+void SlicingOperation_IndexExpand();
 
-#define test_Jx() TensorInfo()
+#define test_Jx() SlicingOperation_IndexExpand()

@@ -114,14 +114,16 @@ void SlicingOperation_IndexExpand()
 {
 	auto options = torch::TensorOptions().dtype(torch::kFloat).device(torch::kCPU);
 	auto x = torch::tensor({ {1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16} }, options);
+	using torch::indexing::Slice;
 	auto _None = torch::indexing::None;
 	auto _Ellipsis = torch::indexing::Ellipsis;  
 	cout << " x[0,2] = " << x.index({ 0, 2 }) << endl;
 	// x[,2] has 3 ways to display.
-	cout << " x[,2] = \n" << x.index({ torch::indexing::Slice(), 2 }).unsqueeze(0) << endl;
-	cout << " x[,2] = \n" << x.index({ torch::indexing::Slice(_None), 2 }).unsqueeze(0) << endl;
+	cout << " x[,2] = \n" << x.index({ Slice(), 2 }).unsqueeze(0) << endl;
+	cout << " x[,2] = \n" << x.index({ Slice(_None), 2 }).unsqueeze(0) << endl;		// Slice() == Slice(_None) == _Ellipsis
 	cout << " x[,2] = \n" << x.index({ _Ellipsis, 2 }).unsqueeze(0) << endl;
 
-	cout << " x[1,0:2] = \n" << x.index({ 1, torch::indexing::Slice(_None, 2) }).unsqueeze(0) << endl;
+	cout << " x[1,:2] = \n" << x.index({ 1, Slice(_None, 2) }).unsqueeze(0) << endl;
+	cout << "\"x[:,::2]\":\n" << x.index({ Slice(), Slice(_None, _None, 2) }) << endl;
 }
 
