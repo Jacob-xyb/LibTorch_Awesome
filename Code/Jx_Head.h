@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void LibMerge_stack();
+void TensorReshape_permute();
 
-#define test_Jx() LibMerge_stack()
+#define test_Jx() TensorReshape_permute()

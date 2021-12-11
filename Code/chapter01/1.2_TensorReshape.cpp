@@ -47,3 +47,12 @@ void TensorReshape_Transpose()
 	cout << "after .contiguous(), x2.is_contiguous(): " << x2.is_contiguous() << endl;
 	cout << x2.view({ 1,6 }) << endl;
 }
+
+void TensorReshape_permute()
+{
+	auto x = torch::ones({ 1,2,3,4 });
+	cout << x.sizes() << endl;
+	auto y = x.permute({ 2,3,0,1 });
+	cout << y.sizes() << endl;
+	TORCH_CHECK(x.data_ptr() == y.data_ptr());
+}
