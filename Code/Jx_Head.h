@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void SlicingOperation_IndexExpand();
+void LibMerge_stack();
 
-#define test_Jx() SlicingOperation_IndexExpand()
+#define test_Jx() LibMerge_stack()
