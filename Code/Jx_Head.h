@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void TensorReshape_permute();
+void SlicingOperation_chunk();
 
-#define test_Jx() TensorReshape_permute()
+#define test_Jx() SlicingOperation_chunk()

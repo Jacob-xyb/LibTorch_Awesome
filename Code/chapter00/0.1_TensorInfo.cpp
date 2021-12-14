@@ -8,6 +8,15 @@ void TensorInfo()
 	{
 		cout << "xxx" << endl;
 	}
+
+	torch::Tensor y;
+	y = torch::empty(3);		// empty().numel() 有值，随机初始化。
+	cout << y << endl;
+	if (y.numel())
+	{
+		cout << "yyy" << endl;
+	}
+
 }
 
 void TensorInfo_BasicInfo()

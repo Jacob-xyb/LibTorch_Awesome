@@ -127,3 +127,21 @@ void SlicingOperation_IndexExpand()
 	cout << "\"x[:,::2]\":\n" << x.index({ Slice(), Slice(_None, _None, 2) }) << endl;
 }
 
+void SlicingOperation_chunk()
+{
+	// torch::chunk(tensor, chunks, dim=0) ¡ú List of Tensors
+	// tensor.chunk(tensor, chunks, dim=0) ¡ú List of Tensors
+
+	// Shallow copy. IF want to change value, please .clone().
+	// Splits a tensor into a specific number of chunks.
+	// Last chunk will be smaller if the tensor size along the given dimension dim is not divisible by chunks.
+	auto x = torch::randn({ 4, 4 });
+	cout << x << endl;
+	auto y1 = x.chunk(2);
+	cout << y1 << endl;
+	auto y2 = x.chunk(2, 1);
+	cout << y2 << endl;
+	cout << y2[0] << endl;
+	TORCH_CHECK(x.data_ptr() == y1[0].data_ptr());
+}
+
