@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void SlicingOperation_chunk();
+void SlicingOperation_gather();
 
-#define test_Jx() SlicingOperation_chunk()
+#define test_Jx() SlicingOperation_gather()

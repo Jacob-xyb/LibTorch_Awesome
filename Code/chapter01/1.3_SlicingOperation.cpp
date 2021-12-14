@@ -145,3 +145,15 @@ void SlicingOperation_chunk()
 	TORCH_CHECK(x.data_ptr() == y1[0].data_ptr());
 }
 
+void SlicingOperation_gather()
+{
+	// at::Tensor at::gather(const at::Tensor &self, int64_t dim, const at::Tensor &index, bool sparse_grad = false)
+
+	// The torch::gather() function is not easy to understand from a formula.
+	// Just for a quick demonstration, index() is good.
+	auto x = torch::tensor({ {1,2,3}, {4,5,6} });
+	auto idx = torch::tensor({ { 2. },{ 1. } }).to(torch::kLong);
+	cout << x.gather(1, idx) << endl;
+}
+
+
